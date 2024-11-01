@@ -1,0 +1,19 @@
+body.dark{
+  background-color: rgba(0, 0, 0, 0.795);
+  --black:white;
+  --gray: white;
+  
+}
+body.mood{
+  background-color: #f8e5bb2b;
+   --black:rgba(40, 41, 56, 1);
+}
+:root{
+
+  --black:rgba(40, 41, 56, 1);
+  --gray: rgba(104, 104, 110, 0.701);
+
+}
+body{
+  background-color:#f8e5bb2b; ;
+}

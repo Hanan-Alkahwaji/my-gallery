@@ -1,0 +1,100 @@
+.hero{
+    margin-top: 170px;
+    padding-left: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.hero .right{
+    width: 50%;
+    text-align: center;
+}
+.hero .right img{
+    width: 50%;
+}
+.hero h4{
+    color: rgba(12, 85, 195, 0.581);
+    font-size: 18px;
+}
+.hero .left {
+    width: 50%;
+}
+.hero .left h1{
+    font-weight: 700;
+    font-size: 36px;
+    width: 70%;
+    color: var(--black);
+}
+.hero .left h1 span{
+    font-weight: 400;
+}
+.hero .left p{
+    color: var(--gray);
+}
+.hero .btn {
+    width: 8.5em;
+    height: 2.3em;
+    margin: 0.5em;
+    background: rgb(12,86,195);
+    background: linear-gradient(90deg, rgba(12,86,195,1) 7%, rgba(108,180,238,1) 45%, rgba(50,240,255,1) 100%); 
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+   }
+   
+   .hero button:hover {
+    color: black;
+   }
+   
+   .hero button:after {
+    content: "";
+    background: rgb(207, 252, 243);
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+   }
+   
+   .hero button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+   }
+   .hero button:active{
+    transform: scale(90%);
+   }
+   @media screen and (max-width:992px){
+    .hero{
+   
+        padding-left: 20px;
+        display: flex;
+        flex-wrap: wrap;
+      
+    }
+    .hero .right{
+        width: 50%;
+        text-align: center;
+    }
+    
+   }
+   @media screen and (max-width:850px){
+   
+    .hero .right{
+        width: 90%;
+        text-align: left;
+    }
+    .hero .left h1{
+        width: 120%;
+    }
+    
+   }
+   

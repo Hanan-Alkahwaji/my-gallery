@@ -1,0 +1,339 @@
+.projects{
+    padding-left: 70px;
+    margin-top: 150px;
+
+}
+.projects h1{
+    font-size: 36px;
+    background: -webkit-linear-gradient(rgba(12,86,195,1), rgba(108,180,238,1),rgba(50,240,255,1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container{
+    display: flex;
+    gap:24px;
+}
+.projects .card .down .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.projects .card .down .info h2{
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 2px;
+    font-family: "Kalnia", serif;
+}
+.projects .card .top{
+    display: flex;
+}
+
+ .projects .card  {
+    width: 350px;
+    background: lightgrey;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px #3333334e;
+    border-radius: 5px;
+    padding: 8px;
+  }
+  
+  .circles,
+  .browser {
+    height: 30px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .circles {
+    width: 20%;
+    gap: 8px;
+    padding: 10px;
+  }
+  
+  .c {
+    width: 09px;
+    height: 9px;
+    border-radius: 50%;
+    box-shadow: inset 2px 2px 5px rgba(235, 235, 235, 0.356);
+  }
+  
+  .c:first-child {
+    background-color: red;
+  }
+  
+  .c:nth-child(2) {
+    background-color: rgb(204, 167, 4);
+  }
+  
+  .c:last-child {
+    background-color: green;
+  }
+  
+  .browser {
+    width: 80%;
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .chevrons {
+    display: flex;
+  }
+  
+  .search-bar {
+    position: relative;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: rgb(88, 88, 88);
+    box-shadow: inset 2px 2px 2px #05050525;
+  }
+  
+  .search-bar svg {
+    position: absolute;
+    left: 10px;
+  }
+  .projects .card .down{
+  
+  }
+  .projects .card .down img{
+    width:  100%;
+   
+}
+
+/* button*/ 
+.container-button{
+   
+}
+.projects .card .down .container-button {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "bt-1 bt-2 bt-3"
+      "bt-4 bt-5 bt-6";
+    position: relative;
+    perspective: 800;
+    padding: 0;
+    width: 145px;
+    height: 47px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .projects .card .down .container-button:active {
+    transform: scale(0.95);
+  }
+  
+  .projects .card .down .hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+  }
+  
+  .projects .card .down .bt-1 {
+    grid-area: bt-1;
+  }
+  
+  .projects .card .down .bt-2 {
+    grid-area: bt-2;
+  }
+  
+  .projects .card .down .bt-3 {
+    grid-area: bt-3;
+  }
+  
+  .projects .card .down .bt-4 {
+    grid-area: bt-4;
+  }
+  
+  .projects .card .down .bt-5 {
+    grid-area: bt-5;
+  }
+  
+  .projects .card .down .bt-6 {
+    grid-area: bt-6;
+  }
+  
+  .projects .card .down .bt-1:hover ~ button {
+    transform: rotateX(15deg) rotateY(-15deg) rotateZ(0deg);
+    box-shadow: -2px -2px #18181888;
+  }
+  
+  .projects .card .down .bt-1:hover ~ button::after {
+    animation: shake 0.5s ease-in-out 0.3s;
+    text-shadow: -2px -2px #18181888;
+  }
+  
+  .projects .card .down .bt-3:hover ~ button {
+    transform: rotateX(15deg) rotateY(15deg) rotateZ(0deg);
+    box-shadow: 2px -2px #18181888;
+  }
+  
+  .projects .card .down .bt-3:hover ~ button::after {
+    animation: shake 0.5s ease-in-out 0.3s;
+    text-shadow: 2px -2px #18181888;
+  }
+  
+  .projects .card .down .bt-4:hover ~ button {
+    transform: rotateX(-15deg) rotateY(-15deg) rotateZ(0deg);
+    box-shadow: -2px 2px #18181888;
+  }
+  
+  .projects .card .down .bt-4:hover ~ button::after {
+    animation: shake 0.5s ease-in-out 0.3s;
+    text-shadow: -2px 2px #18181888;
+  }
+  
+  .projects .card .down .bt-6:hover ~ button {
+    transform: rotateX(-15deg) rotateY(15deg) rotateZ(0deg);
+    box-shadow: 2px 2px #18181888;
+  }
+  
+  .projects .card .down .bt-6:hover ~ button::after {
+    animation: shake 0.5s ease-in-out 0.3s;
+    text-shadow: 2px 2px #18181888;
+  }
+  
+  .projects .card .down .hover:hover ~ button::before {
+    background: transparent;
+  }
+  
+  .projects .card .down .hover:hover ~ button::after {
+    content: "Click";
+    top: -150%;
+    transform: translate(-50%, 0);
+    font-size: 34px;
+    color:  rgba(12,86,195,1);
+  }
+  
+  .projects .card .down button {
+    position: absolute;
+    padding: 0;
+    width: 135px;
+    height: 47px;
+    background: transparent;
+    font-size: 17px;
+    font-weight: 900;
+    border: 3px solid  rgba(12,86,195,1);
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .projects .card .down button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 135px;
+    height: 47px;
+    background-color:  rgba(12,86,195,1);
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+  }
+  
+  .projects .card .down button::after {
+    content: "The Site";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 135px;
+    height: 47px;
+    background-color: transparent;
+    font-size: 17px;
+    font-weight: 900;
+    line-height: 47px;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+  }
+  
+  @keyframes shake {
+    0% {
+      left: 45%;
+    }
+  
+    25% {
+      left: 54%;
+    }
+  
+    50% {
+      left: 48%;
+    }
+  
+    75% {
+      left: 52%;
+    }
+  
+    100% {
+      left: 50%;
+    }
+  }
+  /*btn git*/
+  .projects .card a{
+
+  }
+ .projects .card  .btn {
+    display: grid;
+    width: 80%;
+    margin-left: 10%;
+    place-items: center;
+    background: #e3edf7;
+    padding: 1.4em;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+            -6px -6px 10px -1px rgba(255,255,255,0.7);
+    border: 1px solid rgba(0,0,0,0);
+    cursor: pointer;
+    transition: transform 0.5s;
+  }
+  
+  .projects .card .btn:hover {
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+            inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+            -0.5px -0.5px 0px rgba(255,255,255,1),
+            0.5px 0.5px 0px rgba(0,0,0,0.15),
+            0px 12px 10px -10px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.1);
+    transform: translateY(0.5em);
+  }
+  
+ .projects .card .btn svg {
+    transition: transform 0.5s;
+  }
+  
+   .projects  .btn:hover svg {
+    transform: scale(0.9);
+    fill: #333333;
+  }
+  
+  @media screen and (max-width:992px) {
+    .projects{
+        padding-left: 20px; 
+        padding-right: 10px;
+    }
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .projects .card .down .info{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 16px;
+    }
+    
+  }
