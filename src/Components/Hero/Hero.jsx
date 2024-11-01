@@ -12,7 +12,7 @@ export default function Hero() {
           
         </div>
         <div className="right">
-          <img src="./../../../public/assets/hcj.png" alt="" />
+          <img src="/my-gallery/public/assets/hcj.png" alt="" />
         </div>
       
     </section>
